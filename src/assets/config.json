@@ -1,0 +1,63 @@
+{
+    "production": false,
+    "apiHost": "http://localhost:9000/api/",
+    "baseURL": "http://localhost:9000/",
+    "footertext": "Copyright © 2022 | BDO India LLP | Vendor Management Solution v1.0.0.0",
+    "AngularDebug": true,
+    "supportEmail": "support@bdo.in",
+    "supportMobile": "123 1231 123 123",
+    "b2cPolicies": {
+        "names": {
+            "signIn": "B2C_1_IAM-Local-SignIn-3.0",
+            "editProfile": "B2C_1_IAM-Local-EP_Local-3.0",
+            "resetpassword": "B2C_1_IAM-Local-RP-3.0"
+        },
+        "authorities": {
+            "signIn": {
+                "authority": "https://bdoinappb2c.b2clogin.com/bdoinappb2c.onmicrosoft.com/B2C_1_IAM-Local-SignIn-3.0"
+            },
+            "editProfile": {
+                "authority": "https://bdoinappb2c.b2clogin.com/bdoinappb2c.onmicrosoft.com/B2C_1_IAM-Local-EP_Local-3.0"
+            },
+            "resetpassword": {
+                "authority": "https://bdoinappb2c.b2clogin.com/bdoinappb2c.onmicrosoft.com/B2C_1_IAM-Local-RP-3.0"
+            },
+            "activationRedirectURL": {
+                "authority": "https://bdoinappb2c.b2clogin.com/bdoinappb2c.onmicrosoft.com/"
+            }
+        },
+        "authorityDomain": "bdoinappb2c.b2clogin.com",
+        "apiConfig": {
+            "scopes": [
+                "https://login.microsoftonline.com/tfp/bdoinappb2c.onmicrosoft.com"
+            ],
+            "uri": "https://login.microsoftonline.com/tfp/bdoinappb2c.onmicrosoft.com"
+        },
+        "client_id": "93a1e68a-8f04-4cc7-808c-c25e448da8fa"
+    },
+    "firebase": {
+        "apiKey": "AIzaSyAPitfuoL1k8IeVe8Oedh9dhiU6Bkq33qw",
+        "authDomain": "bdo-push-notification.firebaseapp.com",
+        "databaseURL": "https://bdo-push-notification-default-rtdb.firebaseio.com",
+        "projectId": "bdo-push-notification",
+        "storageBucket": "bdo-push-notification.appspot.com",
+        "messagingSenderId": "764695425376",
+        "appId": "1:764695425376:web:f25e37edfdb952b8202e05",
+        "measurementId": "G-DW3PYRBJM6",
+        "vapidKey": "BC7chw8AwpEzTZloovZhXZigLgIV6-EChvRn3XfCIzba0KTJCk3AAcEiNKVDd14a5Sd-WzP6jd1CgL4Zm_ZqD10"
+    },
+    "allApps": {
+        "GSP": "https://gsp.bdo.in",
+        "EWB": "https://enableewaybill.bdo.in",
+        "GST AUDIT": "https://gstaudit.bdo.in",
+        "E-INVOICE": "https://einvoice.bdo.in",
+        "REMITTANCE": "https://remittance.bdo.in",
+        "BDO PORTAL": "https://taxtechhub.bdo.in/bdo-portal",
+        "GST ANALYTICS": "https://taxtechhub.bdo.in/gst-analytics",
+        "TAX MANAGER": "https://taxtechhub.bdo.in/tax-manager",
+        "GST VENDOR PORTAL": "https://taxtechhub.bdo.in/vendor-portal",
+        "DATA CONNECTOR": "https://taxtechhub.bdo.in/connector",
+        "LEARNING SOLUTIONS": "https://learningsolutions.bdo.in",
+        "TAX LITIGATION": "https://taxtechhub.bdo.in/tax-litigation"
+    }
+}

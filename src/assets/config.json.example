@@ -1,0 +1,63 @@
+{
+    "production": true,
+    "apiHost": "#{apiHost}#",
+    "baseURL": "#{BaseLaravelURL}#/",
+    "footertext": "Copyright © 2022 | BDO India LLP | TDS on Income-v#[Build.BuildNumber]#",
+    "AngularDebug": "#{AngularDebug}#",
+    "supportEmail": "#{supportEmail}#",
+    "supportMobile": "#{supportMobile}#",
+    "b2cPolicies": {
+        "names": {
+            "signIn": "#{b2cPolicies.names.signIn}#",
+            "editProfile": "#{b2cPolicies.names.editProfile}#",
+            "resetpassword": "#{b2cPolicies.names.resetpassword}#"
+        },
+        "authorities": {
+            "signIn": {
+                "authority": "https://#{b2cPolicies.tanentname}#.b2clogin.com/#{b2cPolicies.tanentname}#.onmicrosoft.com/#{b2cPolicies.names.signIn}#"
+            },
+            "editProfile": {
+                "authority": "https://#{b2cPolicies.tanentname}#.b2clogin.com/#{b2cPolicies.tanentname}#.onmicrosoft.com/#{b2cPolicies.names.editProfile}#"
+            },
+            "resetpassword": {
+                "authority": "https://#{b2cPolicies.tanentname}#.b2clogin.com/#{b2cPolicies.tanentname}#.onmicrosoft.com/#{b2cPolicies.names.resetpassword}#"
+            },
+            "activationRedirectURL": {
+                "authority": "https://#{b2cPolicies.tanentname}#.b2clogin.com/#{b2cPolicies.tanentname}#.onmicrosoft.com/"
+            }
+        },
+        "authorityDomain": "#{b2cPolicies.tanentname}#.b2clogin.com",
+        "apiConfig": {
+            "scopes": [
+                "https://login.microsoftonline.com/tfp/#{b2cPolicies.tanentname}#.onmicrosoft.com"
+            ],
+            "uri": "https://login.microsoftonline.com/tfp/#{b2cPolicies.tanentname}#.onmicrosoft.com"
+        },
+        "client_id": "#{b2cPolicies.client_id}#"
+    },
+    "firebase": {
+        "apiKey": "#{firebase.apiKey}#",
+        "authDomain": "#{firebase.authDomain}#.firebaseapp.com",
+        "databaseURL": "https://#{firebase.databaseURL}#.firebaseio.com",
+        "projectId": "#{firebase.projectId}#",
+        "storageBucket": "#{firebase.storageBucket}#.appspot.com",
+        "messagingSenderId": "#{firebase.messagingSenderId}#",
+        "appId": "#{firebase.appId}#",
+        "measurementId": "#{firebase.measurementId}#",
+        "vapidKey": "#{firebase.vapidKey}#"
+    },
+    "allApps": {
+        "GSP": "#{GSP}#",
+        "EWB": "#{EWB}#",
+        "GST AUDIT": "#{GST-AUDIT}#",
+        "E-INVOICE": "#{E-INVOICE}#",
+        "REMITTANCE": "#{REMITTANCE}#",
+        "BDO PORTAL": "#{BDO-PORTAL}#",
+        "GST ANALYTICS": "#{GST-ANALYTICS}#",
+        "TAX MANAGER": "#{TAX-MANAGER}#",
+        "GST VENDOR PORTAL": "#{GST-VENDOR-PORTAL}#",
+        "DATA CONNECTOR": "#{DATA-CONNECTOR}#",
+        "LEARNING SOLUTIONS": "#{LEARNING-SOLUTIONS}#",
+        "TAX LITIGATION": "#{TAX-LITIGATION}#"
+    }
+}
